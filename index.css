@@ -1,0 +1,94 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+  border: 1px solid rgb(233, 224, 224);
+  height: 520px;
+  padding-top: 5px;
+  margin-top: 3px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-right: -100px;
+  margin-left: -100px;
+  margin-top: -22px;
+  color: rgb(50, 116, 6);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /* border-radius: 5px 5px 5px 5px; */
+  user-select: none;
+  border: 1px solid rgb(5, 80, 129);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 3px 0 0 3px; */
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #ebe4e4;
+  border-radius: 5%;
+  display: inline-block;
+  transition: background-color 1ms ease;
+}
+
+.active, .dot:hover {
+  background-color: #a7a2a2;
+}
+
+
+/* .img_m {
+    max-width: 1000px;
+    margin: auto;
+} */
+
+/* Timer */
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  column-gap: 20px;
+  /* background-color: aqua; */
+  align-items: center;
+}
+
+.btn {
+  height: 22px;
+  width: 60px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.minutes, .seconds{
+  color: red;
+  font-weight: bold;
+}
